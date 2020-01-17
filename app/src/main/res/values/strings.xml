@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">TIM</string>
+    <string name="process_begin">Begin</string>
+    <string name="process_end">Terminate</string>
+    <string name="output_status">Status</string>
+    <string name="process_initiating">Initiating Procedure</string>
+    <string name="process_terminating">Terminating Procedure</string>
+    <string name="process_begin_recognition">Beginning Recognition</string>
+    <string name="process_end_recognition">Finished Recognition</string>
+    <string name="process_no_recognition_found">Recognition not available on this device.</string>
+    <string name="process_obtained_results">Recognition results obtained.</string>
+    <string name="process_state_changed">Recognition state changed.</string>
+    <string name="process_error">Recognition error!</string>
 </resources>
