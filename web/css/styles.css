@@ -1,0 +1,131 @@
+  *{
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Helvetica Neue", "Segoe UI", Helvetica, sans-serif;
+  }
+
+  body {
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 100%;
+  }
+
+  .headings{
+    font-family: 'Tomorrow', 'sans-serif';
+    font-weight: 500;
+  }
+
+  button{
+    font-family: 'Tomorrow', 'sans-serif';
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .body-text{
+    font-family: 'Tomorrow', 'sans-serif';
+    font-weight: 400;
+  }
+
+  .captions{
+    font-family: 'Tomorrow', 'sans-serif';
+    font-weight: 300;
+  }
+
+  #mode-indicator{
+    text-align: end;
+    font-family: 'Tomorrow', 'sans-serif';
+    font-weight: 300;
+    padding: 8px 8px 0px 8px;
+    margin-bottom: 0px;
+  }
+
+  #mode-indicator-wrapper{
+    cursor: pointer;
+  }
+
+  #buttons-wrapper .btn{
+    cursor: pointer;
+  }
+
+  #buttons-wrapper .btn:last-child{
+    margin-right: 8px;
+  }
+
+  .indicator{
+    width: 100%;
+  }
+
+  .indicator .text, .toggle .text{
+    font-family: 'Tomorrow', 'sans-serif';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  #toggle-a-wrapper{
+    padding-right: 8px;
+  }
+
+  #toggle-b-wrapper{
+    padding-left: 50px;
+  }
+
+  .joystick-wrapper{
+    position: absolute;
+  }
+
+  .joystick-buttons{
+    margin: 8px;
+  }
+
+  .indicator .light{
+    color: #ff2400;
+  }
+
+  .indicator .light-disabled{
+    color: #8A7E72;
+  }
+
+  #buttons-wrapper{
+    text-align: end;
+  }
+
+  #show-code-btn, #upload-btn{
+    margin-left: 4px;
+  }
+
+  #blocklyArea, #remote-builder-wrapper, #main-wrapper, .max-height {
+    height: 100%;
+  }
+
+  #code-div{
+    box-shadow: -3px 7px 7px -5px #080708;
+    overflow: auto;
+  }
+  .blocklyToolboxDiv{
+    background-color: rgba(238, 238, 238, 0.685);
+  }
+
+  .blocklyTreeRow{
+    height: auto;
+    line-height: 25px;
+    padding-left: 4px !important;
+    cursor: pointer;
+  }
+
+  .error-modal-header{
+    background: #ff2400;
+    color: white;
+  }
+
+  .error-modal-header .close{
+    color: white;
+  }
