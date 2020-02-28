@@ -19,6 +19,8 @@
 """
 
 import paho.mqtt.client as mqtt
+from adafruit_servokit import ServoKit as sk
+from time import sleep
 
 # Don't forget to change the variables for the MQTT broker!
 mqtt_username = "tim"
@@ -26,6 +28,8 @@ mqtt_password = "machine"
 mqtt_topic = "chest"
 mqtt_broker_ip = "192.168.0.111"
 mqtt_broker_port = 1995
+
+kit = sk(channels = 8)
 
 client = mqtt.Client()
 # Set the username and password for the MQTT client
@@ -50,12 +54,40 @@ def on_message(client, userdata, msg):
     # The message itself is stored in the msg variable
     # and details about who sent it are stored in userdata
 
+
+# left upper arm = 0
+ltUpArm = kit.servo[0]
+# left lower arm = 1
+ltLoArm = jit.servo[1]
+# left shoulder = 2
+ltSh = kit.servo[2]
+
+# right upper arm = 3
+rtUpArm = kit.servo[3]
+# right lower arm = 4
+rtLoArm = kit.servo[4]
+# right shoulder = 5
+rtSh = kit.servo[5]
+
+# head = 6
+hd = kit.servo[6]
+
 def processor(topic, message):
-    if (topic == "larm"):
+    if (topic == "larmUp"):
         # control the left arm based on the coordinates obtained from the message
+        if (message == "up"){
+            kit.
+        }
         return ""
-    elif (topic == "rarm"):
-        # control the right arm based on the coordinates obtained from the message
+    elif (topic == "larmRo"):
+        return ""
+    elif (topic == "larmLo"):
+        return ""
+    elif (topic == "rarmUp"):
+        return ""
+    elif (topic == "rarmRo"):
+        return ""
+    elif (topic == "rarmLo"):
         return ""
     elif (topic == "head"):
         # control the head based on the coordinate obtained from the message
